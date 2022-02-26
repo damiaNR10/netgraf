@@ -1,0 +1,34 @@
+//Font family
+$fontMontserrat: 'Montserrat', sans-serif;
+$fontUbuntu: 'Ubuntu', sans-serif;
+
+//Font size
+@mixin fontSize12px {
+    font-size: 12px;
+}
+
+@mixin fontSize14px {
+    font-size: 14px;
+}
+
+@mixin fontSize18px {
+    font-size: 18px;
+}
+
+//Colors
+$colorBlack: #231F20;
+$colorGray: #333029;
+$colorGreen: #A9D04D;
+$colorWhite: #FFFFFF;
+// $colorBlack: #000000;
+// $colorBlue: #132743;
+// $colorGray: #333333;
+// $colorOrange: #EE3D1B;
+// $colorPink: #D52047;
+// $colorPinkLight: #ED4C5C;
+// $colorWhite: #FFFFFF;
+
+//Breakpoints
+$desktop: 1024px;
+$tablet: 768px;
+// $mobile: 320px;

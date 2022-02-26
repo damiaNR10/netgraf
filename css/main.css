@@ -1,0 +1,141 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #231F20;
+  font-size: 14px;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 32px 0 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1340px;
+    padding: 0 20px;
+  }
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.topbar__a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.topbar__contact {
+  color: #333029;
+  font-size: 12px;
+  position: relative;
+}
+
+.topbar__contact:before {
+  border-radius: 50%;
+  background-color: #A9D04D;
+  background-position: center;
+  background-size: 16px auto;
+  background-repeat: no-repeat;
+  background-image: url(/img/svg/icon-mobile-16x16.svg);
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: -48px;
+  top: calc(50% - 16px);
+  content: '';
+}
+
+.topbar__free-delivery {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.topbar__img {
+  width: 24px;
+  height: auto;
+}
+
+.topbar__li {
+  position: relative;
+}
+
+.topbar__li--fb {
+  margin-right: 8px;
+}
+
+.topbar__li--ig {
+  margin-right: 84px;
+}
+
+.topbar__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */
