@@ -1,3 +1,96 @@
 .header {
-    
+    padding-top: 16px;
+    margin-bottom: 32px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (min-width: $desktop) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+        }
+    }
+
+    &__heading {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: $desktop) {
+            margin: 0 auto;
+        }
+
+        @media (min-width: $tablet) {
+            margin-left: 44px;
+        }
+    }
+
+    &__input {
+        border: 1px solid $colorLightGray;
+        line-height: 48px;
+        width: 306px;
+        padding: 0 20px 0 56px;
+        background-image: url(/img/svg/icon-magnifier-24x24.svg);
+        background-size: 24px auto;
+        background-position: 16px center;
+        background-repeat: no-repeat;
+        background-color: $colorWhite;
+        @include fontSize12px;
+        color: $colorSilver;
+
+        &::placeholder {
+            color: $colorSilver;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 47px;
+        position: relative;
+
+        @media (min-width: $desktop) {
+            display: none;
+        }
+
+        a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        img {
+            width: 24px;
+            height: auto;
+        }
+
+        span {
+            display: inline-block;
+            line-height: 16px;
+            margin-top: 10px;
+            font-weight: 500;
+            @include fontSize12px;
+            color: $colorGray;
+        }
+    }
+
+    &__logo {
+        margin-left: 11px;
+    }
+
+    &__search {
+        display: none;
+
+        @media (min-width: $desktop) {
+            display: block;
+        }
+    }
 }

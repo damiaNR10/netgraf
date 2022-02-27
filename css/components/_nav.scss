@@ -1,0 +1,22 @@
+.nav {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: block;
+    }
+
+    &__a {
+        line-height: 24px;
+        color: $colorGray;
+        @include fontSize18px;
+
+    }
+
+    &__ul {
+        padding-left: 7.6vw;
+        padding-right: 7.6vw;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+    }
+}
