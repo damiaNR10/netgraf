@@ -112,17 +112,18 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .header__heading {
+    margin: 0 auto 0 38px;
+  }
 }
 
 @media (min-width: 1024px) {
   .header__heading {
     margin: 0 auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .header__heading {
-    margin-left: 38px;
   }
 }
 
@@ -154,6 +155,10 @@ ul {
 
 .header__input::placeholder {
   color: #757575;
+}
+
+.header__input--mobile {
+  width: 100%;
 }
 
 .header__menu {
@@ -203,8 +208,13 @@ ul {
   color: #333029;
 }
 
-.header__logo {
-  margin-left: 11px;
+.header__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .header__search {
@@ -215,6 +225,82 @@ ul {
   .header__search {
     display: block;
   }
+}
+
+.header__search--mobile {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .header__search--mobile {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px -4px 4px #F5F5F5;
+          box-shadow: 0px -4px 4px #F5F5F5;
+  background-color: #FFFFFF;
+  z-index: 9;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav__a {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-nav__ul {
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-nav__ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-nav__ul li img {
+  width: 24px;
+  height: auto;
+}
+
+.mobile-search {
+  display: none;
+}
+
+.mobile-search--active {
+  display: block;
 }
 
 .nav {
@@ -480,6 +566,7 @@ ul {
 .topbar__free-delivery {
   margin-left: auto;
   font-size: 12px;
+  padding: 5px 0;
 }
 
 .topbar__img {

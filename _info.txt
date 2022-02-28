@@ -1,1 +1,1 @@
--nie dodawałem animacji/efektów na hover
+-strona jest responsywna do mniej więcej 450px szerokości (nie podano konkretnej wartości w wytycznych)

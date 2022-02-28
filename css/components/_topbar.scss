@@ -45,6 +45,7 @@
     &__free-delivery {
         margin-left: auto;
         @include fontSize12px;
+        padding: 5px 0;
     }
 
     &__img {
