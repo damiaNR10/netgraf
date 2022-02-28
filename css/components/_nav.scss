@@ -3,6 +3,9 @@
 
     @media (min-width: $desktop) {
         display: block;
+        position: relative;
+        border-top: 1px solid $colorCreamy;
+        padding: 31px 0;
     }
 
     &__a {

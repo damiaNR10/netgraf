@@ -4,7 +4,12 @@
 
     &__container {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media (min-width: $tablet) {
+            flex-wrap: wrap;
+        }
 
         @media (min-width: $desktop) {
             display: grid;
@@ -24,7 +29,7 @@
         }
 
         @media (min-width: $tablet) {
-            margin-left: 44px;
+            margin-left: 38px;
         }
     }
 
@@ -75,7 +80,7 @@
         span {
             display: inline-block;
             line-height: 16px;
-            margin-top: 10px;
+            margin-top: 7px;
             font-weight: 500;
             @include fontSize12px;
             color: $colorGray;
